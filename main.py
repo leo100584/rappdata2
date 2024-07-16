@@ -1,10 +1,12 @@
 import datetime
 import time
 
-while(True):
-    print("Hello wolrd from Azure!")
-    print("Current date and time: ")
+def showTime():
+    print("Hello wolrd from Azure functions!")
+    print("Current date and time in Norway: ")
     now = datetime.datetime.now()
     # Print the current date and time in a specific format
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
-    time.sleep(10)
+
+if __name__ == '__main__':
+  showTime()
